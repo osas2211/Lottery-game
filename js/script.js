@@ -1,6 +1,7 @@
 const ham = document.querySelector(".ham");
 const Close = document.querySelector(".close");
 const mobileNav = document.querySelector(".mobile-nav");
+//const mobile = document.querySelector(".mobile");
 
 const nav = () =>{
     if (mobileNav.classList.contains("hide-nav")){
@@ -8,6 +9,7 @@ const nav = () =>{
         mobileNav.classList.add("show-nav");
         ham.classList.remove("show");
         Close.classList.add("show");
+        //mobileNav.style.display = "flex";
     }
 
     else if (mobileNav.classList.contains("show-nav")){
@@ -15,6 +17,7 @@ const nav = () =>{
         mobileNav.classList.add("hide-nav");
         ham.classList.add("show");
         Close.classList.remove("show");
+        //mobileNav.style.display = "none";
     }
 }
 
