@@ -14,9 +14,25 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#" class="btn">Play Now</a></li>
+            <li><a href="#play" class="btn">Play Now</a></li>
         </ul>
+        <a href="#" class="ham show">
+            <img src="images/icon-hamburger.svg" alt="" srcset="">
+        </a>
+        <a href="#" class="close">
+            <img src="images/icon-close.svg" alt="" srcset="">
+        </a>
+        
     </header>
+
+    <div class="mobile">
+        <ul class="mobile-nav hide-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#play" class="btn">Play Now</a></li>
+        </ul>
+    </div>
 
     <div class="container">
         <section class="welcome-content">
@@ -24,7 +40,7 @@
                 <p>new crypto game</p>
                 <h2>play to win</h2>
                 <p class="text-muted">Play, Invest, Exchange and join the contest with high rewards at "Company Name"</p>
-                <a href="#" class="btn">Get Started Now</a>
+                <a href="#play" class="btn">Get Started Now</a>
             </div>
             <div class="welcome-img">
                 <img src="images/cards.svg" alt="game-img" srcset="">
@@ -33,7 +49,7 @@
     </div>
     <section class="bottom-section">
         <div class="container">
-            <div class="cards">
+            <div class="cards" id="play">
                 <div class="card card-1">
                     <div class="card-img-1">
                         <img src="images/basic.svg" alt="basic" srcset="">
@@ -63,6 +79,8 @@
             </div>
         </div>
     </section>
+
+    <script src="js/script.js"></script>
 
     
 </body>

@@ -21,8 +21,13 @@
     color: #fff;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -41,6 +46,10 @@ ul{
 a{
     text-decoration: none;
 }
+.ham{
+    display: none;
+}
+
 .btn{
     padding: 0.7rem;
     background-color: var(--red);
@@ -61,7 +70,22 @@ a{
 .text-muted{
     opacity: 0.6;
 }
-.main-header, .main-nav, .welcome-content, .cards, .card{
+.hide-nav{
+    margin-right: -30rem;
+}
+.show-nav{
+    margin-right: 0;
+}
+
+
+.close{
+    display: none;
+}
+
+.mobile{
+    overflow: hidden;
+}
+.main-header, .main-nav, .welcome-content, .cards, .card, .mobile-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,16 +98,31 @@ a{
     padding: 1rem 2rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 4% 100%);
     border-bottom: 1px solid var(--red);
+    position: relative;
 }
+
 .main-nav{
     width: 25vw;
 }
-.main-nav li{
+.main-nav li, .mobile-nav li{
     transition: .3s ease-in-out;
 }
-.main-nav li:hover:not(:last-child){
+.main-nav li:hover:not(:last-child), .mobile-nav li:hover:not(:last-child){
     border-bottom: 1px solid var(--red);
     padding-bottom: 0.5rem;
+}
+.mobile-nav{
+    flex-direction: column;
+    height: 42vh;
+    width: 92vw;
+    position: absolute;
+    background-color: var(--bg-color2);
+    top: 4.1rem;
+    right: 0;
+    z-index: 4;
+    padding: 2rem;
+    transition: .5s ease-in-out;
+    display: none;
 }
 
 .logo{
@@ -207,6 +246,13 @@ a{
     .logo{
         margin-left: 2rem;
     }
+    .show{
+        display: block;
+    }
+    .mobile-nav{
+        display: flex;
+    }
+
     .welcome-content{
         flex-direction: column;
         justify-content: center;
