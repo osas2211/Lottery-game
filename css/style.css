@@ -247,6 +247,7 @@ a{
     }
     .mobile-nav{
         display: flex;
+        height: 30vh;
     }
 
 
@@ -262,9 +263,7 @@ a{
 
 @media (max-width: 750px) {
 
-    *{
-        font-size: 98.5%;
-    }
+    
     .welcome-content{
         flex-direction: column;
         justify-content: center;
@@ -287,6 +286,9 @@ a{
 
     .card-2, .card-3{
         margin-top: 3rem;
+    }
+    .mobile-nav{
+        height: 42vh;
     }
 
 
