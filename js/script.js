@@ -1,3 +1,5 @@
+
+
 const ham = document.querySelector(".ham");
 const Close = document.querySelector(".close");
 const mobileNav = document.querySelector(".mobile-nav");
@@ -23,3 +25,4 @@ const nav = () =>{
 
 ham.addEventListener("click", nav);
 Close.addEventListener("click", nav);
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lottery</title>
+</head>
+<body>
+    <header class="main-header">
+        <h2 class="logo">LOG<span>o</span></h2>
+        <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#play" class="btn">Play Now</a></li>
+        </ul>
+        <a href="#" class="ham show">
+            <img src="images/icon-hamburger.svg" alt="" srcset="">
+        </a>
+        <a href="#" class="close">
+            <img src="images/icon-close.svg" alt="" srcset="">
+        </a>
+
+    </header>
+
+
+    <div class="mobile">
+        <ul class="mobile-nav hide-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#play" class="btn">Play Now</a></li>
+        </ul>
+    </div>
+
+    
+
+    <div class="ticket container">
+        <p class="randomizer"> <span>Get a #Ticket ID</span></p>
+        <a href="#" class="btn get-ticket" onclick=getTicket()>Get Ticket</a>
+        <p class="getting"></p>
+    </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/Randomizer.js"></script>
+</body>
