@@ -3,10 +3,14 @@
 /*
     --bg-color2: #244d949a;
     --bg-color3: #244d9449;
-*/
-:root{
+
+    old-preferred
     --bg-color: #112240;
     --bg-color2: #1d3e75;
+*/
+:root{
+    --bg-color: #183363;
+    --bg-color2: #1e478f;
     --bg-color3: #244d9449;
     --secondary-color-1: #64ffda;
     --secondary-color-2: #F8C630;
@@ -180,7 +184,7 @@ a{
     padding: 2rem;
     margin-top: -11rem;
     border-radius: 0.5rem;
-    box-shadow: 1px 2px 13px #0d1a33ad;
+    box-shadow: 1px 2px 13px #19264179;
 }
 
 .amount{
@@ -255,6 +259,36 @@ a{
     transform: rotate(45deg);
 }
 
+.ticket-type{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+.transaction-history{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.transaction-history h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    word-spacing: 8px;
+}
+table{
+    border-collapse: separate;
+}
+td, th{
+    padding: 0.5rem;
+    border: 1px solid var(--bg-color2);
+}
+th{
+    text-transform: uppercase;
+}
+thead{
+    background-color: var(--bg-color2);
+}
+
 @media (max-width: 1000px) {
 
     .main-nav{
@@ -284,7 +318,10 @@ a{
 
 @media (max-width: 750px) {
 
-    
+    body{
+        overflow: visible;
+    }
+
     .welcome-content{
         flex-direction: column;
         justify-content: center;
