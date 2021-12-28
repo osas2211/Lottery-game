@@ -26,3 +26,8 @@ const nav = () =>{
 ham.addEventListener("click", nav);
 Close.addEventListener("click", nav);
 
+
+const addr = document.querySelectorAll(".address");
+addr.forEach((address) => {
+    address.innerHTML = `${address.textContent.slice(0,8)}....`
+})
